@@ -10,7 +10,7 @@ namespace SeleniumTask2
         {
             PageFactory.InitElements(driver,this);
         }
-        [FindsBy(How = How.XPath, Using = "//div[contains(@class, 'pagehead')]//*[@itemprop='name']/a")]
+        [FindsBy(How = How.XPath, Using = "//*[@itemprop='name']/a")]
         private IWebElement SeleniumRepository { get; set; }
         public void CheckRepositoryName()
         {
